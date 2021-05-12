@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://gihokim-datascientist.github.io/author/GihoKim/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-13T01:30:31+09:00</updated>
+  <updated>2021-05-12T11:29:42-07:00</updated>
   <id>https://gihokim-datascientist.github.io/author/GihoKim/feed.xml</id>
 
   
@@ -12,11 +12,11 @@
   
 
   
-    <title type="html">Jr Data Scientist  Giho’s Brain of Machine Learning | </title>
+    <title type="html">Giho’s Data Science Notes | </title>
   
 
   
-    <subtitle>주니어 개발자의 개발 노트 (Junior ML college students notes)</subtitle>
+    <subtitle>주니어 데이터 사이언티스트의 공부 노트</subtitle>
   
 
   
@@ -34,8 +34,8 @@
     <entry>
       <title type="html">Machine Learning 실습예제 - k-means clustering</title>
       <link href="https://gihokim-datascientist.github.io/k-means-clustering-code" rel="alternate" type="text/html" title="Machine Learning 실습예제 - k-means clustering" />
-      <published>2021-05-12T01:40:00+09:00</published>
-      <updated>2021-05-12T01:40:00+09:00</updated>
+      <published>2021-05-11T09:40:00-07:00</published>
+      <updated>2021-05-11T09:40:00-07:00</updated>
       <id>https://gihokim-datascientist.github.io/k-means-clustering-code</id>
       <content type="html" xml:base="https://gihokim-datascientist.github.io/k-means-clustering-code">&lt;span class=&quot;table-of-contents-list&quot;&gt;Modeling 구성 &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -15050,8 +15050,8 @@ The total cost after the first iteration is 8
     <entry>
       <title type="html">Machine Learning 실습예제 - linear regression</title>
       <link href="https://gihokim-datascientist.github.io/linear-regression-modeling" rel="alternate" type="text/html" title="Machine Learning 실습예제 - linear regression" />
-      <published>2021-05-02T01:40:00+09:00</published>
-      <updated>2021-05-02T01:40:00+09:00</updated>
+      <published>2021-05-01T09:40:00-07:00</published>
+      <updated>2021-05-01T09:40:00-07:00</updated>
       <id>https://gihokim-datascientist.github.io/linear-regression-modeling</id>
       <content type="html" xml:base="https://gihokim-datascientist.github.io/linear-regression-modeling">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Modeling 구성 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;

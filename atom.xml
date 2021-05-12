@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> - Articles</title>
-    <description>주니어 개발자의 개발 노트 (Junior ML college students notes)</description>
+    <description>주니어 데이터 사이언티스트의 공부 노트</description>
     <link>
     https://gihokim-datascientist.github.io</link>
     
@@ -18,7 +18,7 @@
 
 </description>
         
-        <pubDate>Wed, 12 May 2021 01:40:00 +0900</pubDate>
+        <pubDate>Tue, 11 May 2021 09:40:00 -0700</pubDate>
         <link>
         https://gihokim-datascientist.github.io/k-means-clustering-code</link>
         <guid isPermaLink="true">https://gihokim-datascientist.github.io/k-means-clustering-code</guid>
@@ -37,7 +37,7 @@
 
 </description>
         
-        <pubDate>Sun, 02 May 2021 01:40:00 +0900</pubDate>
+        <pubDate>Sat, 01 May 2021 09:40:00 -0700</pubDate>
         <link>
         https://gihokim-datascientist.github.io/linear-regression-modeling</link>
         <guid isPermaLink="true">https://gihokim-datascientist.github.io/linear-regression-modeling</guid>

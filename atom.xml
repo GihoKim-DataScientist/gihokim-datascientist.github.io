@@ -10,7 +10,7 @@
       <item>
         <title>Machine Learning 실습예제 - k-means clustering</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Modeling 구성 &lt;/span&gt;&lt;/p&gt;
+          <description>&lt;span class=&quot;table-of-contents-list&quot;&gt;Modeling 구성 &lt;/span&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./linear-regression-modeling&quot;&gt;Machine Learning 실습예제 (1) - linear regression&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./k-means-clustering-code&quot;&gt;Machine Learning 실습예제 (2) - K-means clustering&lt;/a&gt;&lt;/li&gt;
@@ -18,7 +18,7 @@
 
 </description>
         
-        <pubDate>Tue, 11 May 2021 09:40:00 -0700</pubDate>
+        <pubDate>Wed, 12 May 2021 01:40:00 +0900</pubDate>
         <link>
         https://gihokim-datascientist.github.io/k-means-clustering-code</link>
         <guid isPermaLink="true">https://gihokim-datascientist.github.io/k-means-clustering-code</guid>
@@ -37,7 +37,7 @@
 
 </description>
         
-        <pubDate>Sat, 01 May 2021 09:40:00 -0700</pubDate>
+        <pubDate>Sun, 02 May 2021 01:40:00 +0900</pubDate>
         <link>
         https://gihokim-datascientist.github.io/linear-regression-modeling</link>
         <guid isPermaLink="true">https://gihokim-datascientist.github.io/linear-regression-modeling</guid>

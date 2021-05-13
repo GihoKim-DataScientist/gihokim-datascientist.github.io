@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://gihokim-datascientist.github.io/author/GihoKim/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-12T21:13:38-07:00</updated>
+  <updated>2021-05-13T07:55:14-07:00</updated>
   <id>https://gihokim-datascientist.github.io/author/GihoKim/feed.xml</id>
 
   
@@ -2580,55 +2580,93 @@ dtype: float64
     </entry>
   
     <entry>
-      <title type="html">Machine Learning Algorithm - linear regression (2)</title>
-      <link href="https://gihokim-datascientist.github.io/algorithm-linear-regression-2" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (2)" />
+      <title type="html">Machine Learning Algorithm - linear regression (3)</title>
+      <link href="https://gihokim-datascientist.github.io/algorithms-linear-regression-3" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (3)" />
       <published>2021-04-13T09:40:00-07:00</published>
       <updated>2021-04-13T09:40:00-07:00</updated>
-      <id>https://gihokim-datascientist.github.io/algorithm-linear-regression-2</id>
-      <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithm-linear-regression-2">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+      <id>https://gihokim-datascientist.github.io/algorithms-linear-regression-3</id>
+      <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithms-linear-regression-3">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (3) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;parameter-estimate-algorithms&quot;&gt;Parameter Estimate Algorithms&lt;/h1&gt;
+&lt;h1 id=&quot;parameter-estimation-algorithms&quot;&gt;Parameter Estimation Algorithms&lt;/h1&gt;
+
+&lt;p&gt;Least squared estimator&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;mean squared error&lt;/li&gt;
+  &lt;li&gt;estimator: a function of the samples&lt;/li&gt;
+  &lt;li&gt;purpose of estimator: to find out unknown parameters&lt;/li&gt;
+  &lt;li&gt;types of estimator
+    &lt;ol&gt;
+      &lt;li&gt;point estimator (점 추정)&lt;/li&gt;
+      &lt;li&gt;interval estimator (구간 추정)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/second_linear_regression1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;point-estimator&quot;&gt;point estimator&lt;/h3&gt;
 
-&lt;p&gt;function H(x)를 w0 + w1 X1으로 두었기 때문에&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/second_linear_regression2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;이런식으로 바뀌게 되는것을 알 수 있다.&lt;/p&gt;
-
-&lt;h3 id=&quot;to-find-best-fit-line&quot;&gt;To find best fit line&lt;/h3&gt;
+&lt;h4 id=&quot;yi--w0--w1-xi--εi-εi--n0-σ-i--1-2--n&quot;&gt;Yi = w0 + w1 Xi + εi, εi ~ N(0, σ²), i = 1, 2, … n&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;cost function을 MSE로 썻기 때문에 parabola 형태를 뛴 그래프 형태가 될 것이다&lt;/li&gt;
-  &lt;li&gt;gradient descent를 적용 w0과 w1에 대한 partial derivative를 각각 구한다&lt;/li&gt;
-  &lt;li&gt;partial derivative = 0 꼴로 만들고 w0과 w1으로 풀어쓰게 되면 w0과 w1에 대한 식이 생겨남&lt;/li&gt;
+  &lt;li&gt;w0 에 대한 point estimator: ^w0 = mean(y) - ^w1 * mean(x)&lt;/li&gt;
+  &lt;li&gt;w1 에 대한 point estimator: linear regression 2 참조&lt;/li&gt;
+  &lt;li&gt;σ²에 대한 point estimator: ^σ²= (1 / n - 2) sum ( ei²) -&amp;gt; residual&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/second_linear_regression3.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;^Y = ^w0 + ^w1 X 꼴의 식이 성립된다&lt;/p&gt;
-
-&lt;h1 id=&quot;least-squared-estimation-algorithm-최소제곱법&quot;&gt;Least squared Estimation Algorithm (최소제곱법)&lt;/h1&gt;
-
-&lt;h3 id=&quot;residual-잔차&quot;&gt;Residual (잔차)&lt;/h3&gt;
+&lt;h3 id=&quot;interval-estimation&quot;&gt;Interval Estimation&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;e = y - ^y 최소 제곱법으로 구해진 직선의 ^Y와 실제 Y값의 차이 (정해진 값)&lt;/li&gt;
-  &lt;li&gt;ε = y - E(y) 오차항은 확률 분포를 따름&lt;/li&gt;
-  &lt;li&gt;잔차 e는 확률 오차 ε이 실제로 구현된 값&lt;/li&gt;
+  &lt;li&gt;구간으로 측정하여 보다 유연한 정보 제공&lt;/li&gt;
+  &lt;li&gt;θ (parameter)에 대한 구간 측정 -&amp;gt; ^θ - 상수값 * std(θ) &amp;lt;= θ &amp;lt;= ^θ + 상수값 * std(θ)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/second_linear_regression4.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;</content>
+&lt;h3 id=&quot;기울기에-대한-가설검정&quot;&gt;기울기에 대한 가설검정&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;unknown parameter에 대한 가설을 세우고 이를 검정&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;p-value&quot;&gt;p-value&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;p-value가 0.05나 0.01보다 작으면 reject null hypothesis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;statsmodelsformulaapi에-ols-function을-통한-모델링을-했을때&quot;&gt;statsmodels.formula.api에 ols function을 통한 모델링을 했을때&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//linear_regression/thrid_linear_regression1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;parameters: wet, frs, cld, intercept&lt;/li&gt;
+  &lt;li&gt;point estimates: 각각의 coef&lt;/li&gt;
+  &lt;li&gt;std: 각각의 std err&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression4.png&quot; alt=&quot;png&quot; /&gt;
+&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression3.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;t: 전반적으로 모든 parameter들의&lt;/td&gt;
+          &lt;td&gt;t&lt;/td&gt;
+          &lt;td&gt;값들이 큼 -&amp;gt; null hypothesis를 reject&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;p-value: 모든 slope parameters이 0.05보다 큰 값이 없기 때문에 statistically significant&lt;/li&gt;
+&lt;/ul&gt;</content>
 
       
       
@@ -2649,7 +2687,85 @@ dtype: float64
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2)</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3)</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Machine Learning Algorithm - linear regression (2)</title>
+      <link href="https://gihokim-datascientist.github.io/algorithm-linear-regression-2" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (2)" />
+      <published>2021-04-13T09:40:00-07:00</published>
+      <updated>2021-04-13T09:40:00-07:00</updated>
+      <id>https://gihokim-datascientist.github.io/algorithm-linear-regression-2</id>
+      <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithm-linear-regression-2">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (3) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;parameter-estimate-algorithms&quot;&gt;Parameter Estimate Algorithms&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;mean squared error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/second_linear_regression1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;function H(x)를 w0 + w1 X1으로 두었기 때문에&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/second_linear_regression2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이런식으로 바뀌게 되는것을 알 수 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;to-find-best-fit-line&quot;&gt;To find best fit line&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;cost function을 MSE로 썻기 때문에 parabola 형태를 뛴 그래프 형태가 될 것이다&lt;/li&gt;
+  &lt;li&gt;gradient descent를 적용 w0과 w1에 대한 partial derivative를 각각 구한다&lt;/li&gt;
+  &lt;li&gt;partial derivative = 0 꼴로 만들고 w0과 w1으로 풀어쓰게 되면 w0과 w1에 대한 식이 생겨남&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/second_linear_regression3.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;^Y = ^w0 + ^w1 X 꼴의 식이 성립된다&lt;/p&gt;
+
+&lt;h1 id=&quot;least-squared-estimation-algorithm-최소제곱법&quot;&gt;Least squared Estimation Algorithm (최소제곱법)&lt;/h1&gt;
+
+&lt;h3 id=&quot;residual-잔차&quot;&gt;Residual (잔차)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;e = y - ^y 최소 제곱법으로 구해진 직선의 ^Y와 실제 Y값의 차이 (정해진 값)&lt;/li&gt;
+  &lt;li&gt;ε = y - E(y) 오차항은 확률 분포를 따름&lt;/li&gt;
+  &lt;li&gt;잔차 e는 확률 오차 ε이 실제로 구현된 값&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/second_linear_regression4.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>GihoKim</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithms" />
+      
+
+      
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3)</summary>
       
 
       
@@ -2667,6 +2783,7 @@ dtype: float64
     &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (3) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;linear-regression-선형-회귀&quot;&gt;Linear regression (선형 회귀)&lt;/h1&gt;
@@ -2688,7 +2805,7 @@ dtype: float64
 
 &lt;h1 id=&quot;francis-galton&quot;&gt;Francis Galton&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression_(1).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/linear_regression_(1).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;relationship of height between father and son&lt;/p&gt;
 
@@ -2715,12 +2832,12 @@ dtype: float64
 
 &lt;h1 id=&quot;regression-model-types&quot;&gt;Regression model types&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression_(2).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/linear_regression_(2).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;선형회귀는 가장 데이터에 알맞은 함수 (line)를 찾는 것
 (Find the best fit line of different lines)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression_(3).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/linear_regression_(3).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;</content>
 
       
       
@@ -2741,7 +2858,7 @@ dtype: float64
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2)</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3)</summary>
       
 
       
@@ -2759,6 +2876,7 @@ dtype: float64
     &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (3) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;모델링이란&quot;&gt;모델링이란?&lt;/h1&gt;
@@ -2901,7 +3019,7 @@ dtype: float64
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2)</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3)</summary>
       
 
       

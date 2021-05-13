@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://gihokim-datascientist.github.io/tag/algorithms/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-13T07:55:14-07:00</updated>
+  <updated>2021-05-13T09:09:11-07:00</updated>
   <id>https://gihokim-datascientist.github.io/tag/algorithms/feed.xml</id>
 
   
@@ -32,17 +32,241 @@
 
   
     <entry>
+      <title type="html">Machine Learning Algorithm - linear regression (4)</title>
+      <link href="https://gihokim-datascientist.github.io/algorithm-linear-regression-4" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (4)" />
+      <published>2021-04-13T13:40:00-07:00</published>
+      <updated>2021-04-13T13:40:00-07:00</updated>
+      <id>https://gihokim-datascientist.github.io/algorithm-linear-regression-4</id>
+      <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithm-linear-regression-4">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;결정계수-coefficient-of-determination-r2&quot;&gt;결정계수 (coefficient of determination: R^2)&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Yi = 실제 Y 값&lt;/li&gt;
+  &lt;li&gt;두번째 점은 모델링에서 나온 ^Y값&lt;/li&gt;
+  &lt;li&gt;Y bar은 실제 Y값의 평균값&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//linear_regression/fourth_linear_regression1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;r2&quot;&gt;R^2&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SSE = 실제 Y값과 모델의 ^Y 값들의 차이의 제곱 합&lt;/li&gt;
+  &lt;li&gt;SSR = 모델의 ^Y값과 실제 Y의 평균값과의 차이의 제곱 합&lt;/li&gt;
+  &lt;li&gt;SST = SSR + SSE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ssr--sst--r2&quot;&gt;SSR / SST = R^2&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1인 경우: SST = SSR + (SSE = 0); model의 직선이 실제 Y값들을 지나감 (확정적인 관계)
+현재 가지고 있는 x변수로 y를 100% 설명, 모든 y가 linear regression line위에 있다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//linear_regression/fourth_linear_regression2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;0인 경우: SST = (SSR = 0) + SSE; model의 직선이 Y값의 평균을 지나감 (parameter x가 아무런 y에 효과가 없음)
+현재 가지고 있는 x변수는 y를 설명(예측)에 전혀 도움이 되지않는다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;사용하고 있는 x변수가 y변수의 variance를 얼마나 줄였는지 정도&lt;/li&gt;
+  &lt;li&gt;단순히 y의 평균값을 사용했을 때 대비 x정보를 사용함으로써 얻는 성능 향상 정도&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;수정-결정계수-adjusted-r2&quot;&gt;수정 결정계수 (Adjusted R^2)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//linear_regression/fourth_linear_regression4.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;R^2는 의미없는 변수 x가 추가되어도 항상 증가한다&lt;/li&gt;
+  &lt;li&gt;수정 R^2는 의미없는 변수 x가 추가되었을때 R^2가 증가하는것을 방지하기위해 특정 계수를 식앞에 곱해줌&lt;/li&gt;
+  &lt;li&gt;의미있는 변수 x가 추가되었을때는 SSE값이 떨어지기 때문에 전체 adj R^2는 증가하게 된다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;예제&quot;&gt;예제&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//linear_regression/fourth_linear_regression5.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;parameter x1 (판매원 수)와 x2 (광고비) 에 의해 y (매출액)의 variance가 68.3% 감소&lt;/li&gt;
+  &lt;li&gt;매출액의 평균 (y bar)에 대비 x1, x2 parameter를 이용하면 설명력이 68.3% 증가&lt;/li&gt;
+  &lt;li&gt;현재 분석에 사용하고 있는 판매원 수와 광고비는 “변수 품질”정도가 68.3 (100점 기준)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;분산-분석-analysis-of-variance&quot;&gt;분산 분석 (analysis of variance)&lt;/h1&gt;
+
+&lt;h3 id=&quot;ssr--sse-x-변수에-의해-설명된-것--에러에-의한-설명된-것&quot;&gt;SSR / SSE (x 변수에 의해 설명된 것 / 에러에 의한 설명된 것)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SSR / SSE &amp;gt; 1
+    &lt;ol&gt;
+      &lt;li&gt;SSR &amp;gt; SSE; x변수가 y변수에 statistically significant&lt;/li&gt;
+      &lt;li&gt;x변수의 기울기가 0이 아님 -&amp;gt; reject null hypothesis&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;0 &amp;lt;= SSR / SSE &amp;lt;= 1
+    &lt;ol&gt;
+      &lt;li&gt;SSR &amp;lt; SSE; x변수가 y변수에 not statistically significant&lt;/li&gt;
+      &lt;li&gt;x변수의 기울기가 0 -&amp;gt; null hypothesis is true&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>GihoKim</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithms" />
+      
+
+      
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4)</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Machine Learning Algorithm - linear regression (3)</title>
+      <link href="https://gihokim-datascientist.github.io/algorithm-linear-regression-3" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (3)" />
+      <published>2021-04-13T11:40:00-07:00</published>
+      <updated>2021-04-13T11:40:00-07:00</updated>
+      <id>https://gihokim-datascientist.github.io/algorithm-linear-regression-3</id>
+      <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithm-linear-regression-3">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;parameter-estimation-algorithms&quot;&gt;Parameter Estimation Algorithms&lt;/h1&gt;
+
+&lt;p&gt;Least squared estimator&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;estimator: a function of the samples&lt;/li&gt;
+  &lt;li&gt;purpose of estimator: to find out unknown parameters&lt;/li&gt;
+  &lt;li&gt;types of estimator
+    &lt;ol&gt;
+      &lt;li&gt;point estimator (점 추정)&lt;/li&gt;
+      &lt;li&gt;interval estimator (구간 추정)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;point-estimator&quot;&gt;point estimator&lt;/h3&gt;
+
+&lt;h4 id=&quot;yi--w0--w1-xi--εi-εi--n0-σ-i--1-2--n&quot;&gt;Yi = w0 + w1 Xi + εi, εi ~ N(0, σ²), i = 1, 2, … n&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;w0 에 대한 point estimator: ^w0 = mean(y) - ^w1 * mean(x)&lt;/li&gt;
+  &lt;li&gt;w1 에 대한 point estimator: linear regression 2 참조&lt;/li&gt;
+  &lt;li&gt;σ²에 대한 point estimator: ^σ²= (1 / n - 2) sum ( ei²) -&amp;gt; residual&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;interval-estimation&quot;&gt;Interval Estimation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;구간으로 측정하여 보다 유연한 정보 제공&lt;/li&gt;
+  &lt;li&gt;θ (parameter)에 대한 구간 측정 -&amp;gt; ^θ - 상수값 * std(θ) &amp;lt;= θ &amp;lt;= ^θ + 상수값 * std(θ)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;기울기에-대한-가설검정&quot;&gt;기울기에 대한 가설검정&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;unknown parameter에 대한 가설을 세우고 이를 검정&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;p-value&quot;&gt;p-value&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;p-value가 0.05나 0.01보다 작으면 reject null hypothesis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;statsmodelsformulaapi에-ols-function을-통한-모델링을-했을때&quot;&gt;statsmodels.formula.api에 ols function을 통한 모델링을 했을때&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//linear_regression/thrid_linear_regression1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;parameters: wet, frs, cld, intercept&lt;/li&gt;
+  &lt;li&gt;point estimates: 각각의 coef&lt;/li&gt;
+  &lt;li&gt;std: 각각의 std err&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression4.png&quot; alt=&quot;png&quot; /&gt;
+&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression3.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;t: 전반적으로 모든 parameters들의 abs(t)값이 &amp;gt; 1.96 (p &amp;lt; 0.05) 또는 abs(t) &amp;gt; 2.58 (p &amp;lt; 0.01) 큼 -&amp;gt; null hypothesis를 reject&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;p-value: 모든 slope parameters이 0.05보다 큰 값이 없기 때문에 statistically significant&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>GihoKim</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithms" />
+      
+
+      
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4)</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Machine Learning Algorithm - linear regression (2)</title>
       <link href="https://gihokim-datascientist.github.io/algorithm-linear-regression-2" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (2)" />
-      <published>2021-04-13T09:40:00-07:00</published>
-      <updated>2021-04-13T09:40:00-07:00</updated>
+      <published>2021-04-13T08:40:00-07:00</published>
+      <updated>2021-04-13T08:40:00-07:00</updated>
       <id>https://gihokim-datascientist.github.io/algorithm-linear-regression-2</id>
       <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithm-linear-regression-2">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (3) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;parameter-estimate-algorithms&quot;&gt;Parameter Estimate Algorithms&lt;/h1&gt;
@@ -102,7 +326,7 @@
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3)</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4)</summary>
       
 
       
@@ -112,15 +336,16 @@
     <entry>
       <title type="html">Machine Learning Algorithm - linear regression (1)</title>
       <link href="https://gihokim-datascientist.github.io/algorithm-linear-regression-1" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (1)" />
-      <published>2021-04-13T09:40:00-07:00</published>
-      <updated>2021-04-13T09:40:00-07:00</updated>
+      <published>2021-04-13T05:40:00-07:00</published>
+      <updated>2021-04-13T05:40:00-07:00</updated>
       <id>https://gihokim-datascientist.github.io/algorithm-linear-regression-1</id>
       <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithm-linear-regression-1">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (3) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;linear-regression-선형-회귀&quot;&gt;Linear regression (선형 회귀)&lt;/h1&gt;
@@ -195,122 +420,7 @@
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3)</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Machine Learning Algorithm - linear regression (3)</title>
-      <link href="https://gihokim-datascientist.github.io/algorithms-linear-regression-3" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (3)" />
-      <published>2021-04-13T09:40:00-07:00</published>
-      <updated>2021-04-13T09:40:00-07:00</updated>
-      <id>https://gihokim-datascientist.github.io/algorithms-linear-regression-3</id>
-      <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithms-linear-regression-3">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (3) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;parameter-estimation-algorithms&quot;&gt;Parameter Estimation Algorithms&lt;/h1&gt;
-
-&lt;p&gt;Least squared estimator&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;estimator: a function of the samples&lt;/li&gt;
-  &lt;li&gt;purpose of estimator: to find out unknown parameters&lt;/li&gt;
-  &lt;li&gt;types of estimator
-    &lt;ol&gt;
-      &lt;li&gt;point estimator (점 추정)&lt;/li&gt;
-      &lt;li&gt;interval estimator (구간 추정)&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;point-estimator&quot;&gt;point estimator&lt;/h3&gt;
-
-&lt;h4 id=&quot;yi--w0--w1-xi--εi-εi--n0-σ-i--1-2--n&quot;&gt;Yi = w0 + w1 Xi + εi, εi ~ N(0, σ²), i = 1, 2, … n&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;w0 에 대한 point estimator: ^w0 = mean(y) - ^w1 * mean(x)&lt;/li&gt;
-  &lt;li&gt;w1 에 대한 point estimator: linear regression 2 참조&lt;/li&gt;
-  &lt;li&gt;σ²에 대한 point estimator: ^σ²= (1 / n - 2) sum ( ei²) -&amp;gt; residual&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;interval-estimation&quot;&gt;Interval Estimation&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;구간으로 측정하여 보다 유연한 정보 제공&lt;/li&gt;
-  &lt;li&gt;θ (parameter)에 대한 구간 측정 -&amp;gt; ^θ - 상수값 * std(θ) &amp;lt;= θ &amp;lt;= ^θ + 상수값 * std(θ)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;기울기에-대한-가설검정&quot;&gt;기울기에 대한 가설검정&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;unknown parameter에 대한 가설을 세우고 이를 검정&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;p-value&quot;&gt;p-value&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;p-value가 0.05나 0.01보다 작으면 reject null hypothesis&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;statsmodelsformulaapi에-ols-function을-통한-모델링을-했을때&quot;&gt;statsmodels.formula.api에 ols function을 통한 모델링을 했을때&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//linear_regression/thrid_linear_regression1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;parameters: wet, frs, cld, intercept&lt;/li&gt;
-  &lt;li&gt;point estimates: 각각의 coef&lt;/li&gt;
-  &lt;li&gt;std: 각각의 std err&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression4.png&quot; alt=&quot;png&quot; /&gt;
-&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression3.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;t: 전반적으로 모든 parameter들의&lt;/td&gt;
-          &lt;td&gt;t&lt;/td&gt;
-          &lt;td&gt;값들이 큼 -&amp;gt; null hypothesis를 reject&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;p-value: 모든 slope parameters이 0.05보다 큰 값이 없기 때문에 statistically significant&lt;/li&gt;
-&lt;/ul&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>GihoKim</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="algorithms" />
-      
-
-      
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3)</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4)</summary>
       
 
       
@@ -328,7 +438,8 @@
     &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (3) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;모델링이란&quot;&gt;모델링이란?&lt;/h1&gt;
@@ -471,7 +582,7 @@
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3)</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4)</summary>
       
 
       

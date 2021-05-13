@@ -11,7 +11,7 @@
 
 
 
-    <title>Machine Learning Algorithm - linear regression (3)</title>
+    <title>Machine Learning Algorithm - linear regression (4)</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -49,24 +49,24 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="주니어 데이터 사이언티스트 김기호의 컴퓨터 공부 일기" />
     <link rel="shortcut icon" href="https://gihokim-datascientist.github.io/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://gihokim-datascientist.github.io/algorithms-linear-regression-3" />
+    <link rel="canonical" href="https://gihokim-datascientist.github.io/algorithm-linear-regression-4" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Giho's Data Science Notes" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Machine Learning Algorithm - linear regression (3)" />
-    <meta property="og:description" content="Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3) Parameter Estimation Algorithms Least squared estimator estimator: a function of the samples purpose of estimator: to find" />
-    <meta property="og:url" content="https://gihokim-datascientist.github.io/algorithms-linear-regression-3" />
+    <meta property="og:title" content="Machine Learning Algorithm - linear regression (4)" />
+    <meta property="og:description" content="Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4) 결정계수 (coefficient of determination: R^2) Yi = 실제 Y" />
+    <meta property="og:url" content="https://gihokim-datascientist.github.io/algorithm-linear-regression-4" />
     <meta property="og:image" content="https://gihokim-datascientist.github.io/assets/built/images/algorithm.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-04-13T09:40:00-07:00" />
-    <meta property="article:modified_time" content="2021-04-13T09:40:00-07:00" />
+    <meta property="article:published_time" content="2021-04-13T13:40:00-07:00" />
+    <meta property="article:modified_time" content="2021-04-13T13:40:00-07:00" />
     <meta property="article:tag" content="Algorithms" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Machine Learning Algorithm - linear regression (3)" />
-    <meta name="twitter:description" content="Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3) Parameter Estimation Algorithms Least squared estimator estimator: a function of the samples purpose of estimator: to find" />
+    <meta name="twitter:title" content="Machine Learning Algorithm - linear regression (4)" />
+    <meta name="twitter:description" content="Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4) 결정계수 (coefficient of determination: R^2) Yi = 실제 Y" />
     <meta name="twitter:url" content="https://gihokim-datascientist.github.io/" />
     <meta name="twitter:image" content="https://gihokim-datascientist.github.io/assets/built/images/algorithm.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -87,7 +87,7 @@
         "name": "Giho's Data Science Notes",
         "logo": "https://gihokim-datascientist.github.io/"
     },
-    "url": "https://gihokim-datascientist.github.io/algorithms-linear-regression-3",
+    "url": "https://gihokim-datascientist.github.io/algorithm-linear-regression-4",
     "image": {
         "@type": "ImageObject",
         "url": "https://gihokim-datascientist.github.io/assets/built/images/algorithm.jpg",
@@ -96,9 +96,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://gihokim-datascientist.github.io/algorithms-linear-regression-3"
+        "@id": "https://gihokim-datascientist.github.io/algorithm-linear-regression-4"
     },
-    "description": "Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3) Parameter Estimation Algorithms Least squared estimator estimator: a function of the samples purpose of estimator: to find"
+    "description": "Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4) 결정계수 (coefficient of determination: R^2) Yi = 실제 Y"
 }
     </script>
 
@@ -111,7 +111,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Machine Learning Algorithm - linear regression (3)" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Machine Learning Algorithm - linear regression (4)" href="/feed.xml" />
 
 
 </head>
@@ -184,7 +184,7 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">Machine Learning Algorithm - linear regression (3)</h1>
+                <h1 class="post-full-title">Machine Learning Algorithm - linear regression (4)</h1>
             </header>
 
             <!--
@@ -201,84 +201,85 @@ into the {body} of the default.hbs template -->
     <li><a href="./algorithms-basic">Algorithms (1) - Machine learning basic 기초</a></li>
     <li><a href="./algorithm-linear-regression-1">Algorithms (2) - Machine learning linear regression (1)</a></li>
     <li><a href="./algorithm-linear-regression-2">Algorithms (2) - Machine learning linear regression (2)</a></li>
-    <li><a href="./algorithm-linear-regression-2">Algorithms (3) - Machine learning linear regression (3)</a></li>
+    <li><a href="./algorithm-linear-regression-3">Algorithms (2) - Machine learning linear regression (3)</a></li>
+    <li><a href="./algorithm-linear-regression-4">Algorithms (2) - Machine learning linear regression (4)</a></li>
 </ul>
 
-<h1 id="parameter-estimation-algorithms">Parameter Estimation Algorithms</h1>
-
-<p>Least squared estimator</p>
+<h1 id="결정계수-coefficient-of-determination-r2">결정계수 (coefficient of determination: R^2)</h1>
 
 <ul>
-  <li>estimator: a function of the samples</li>
-  <li>purpose of estimator: to find out unknown parameters</li>
-  <li>types of estimator
+  <li>Yi = 실제 Y 값</li>
+  <li>두번째 점은 모델링에서 나온 ^Y값</li>
+  <li>Y bar은 실제 Y값의 평균값</li>
+</ul>
+
+<p><img src="../jupyterimages/algorithms_images//linear_regression/fourth_linear_regression1.png" alt="png" /></p>
+
+<h3 id="r2">R^2</h3>
+
+<ul>
+  <li>SSE = 실제 Y값과 모델의 ^Y 값들의 차이의 제곱 합</li>
+  <li>SSR = 모델의 ^Y값과 실제 Y의 평균값과의 차이의 제곱 합</li>
+  <li>SST = SSR + SSE</li>
+</ul>
+
+<h3 id="ssr--sst--r2">SSR / SST = R^2</h3>
+
+<ul>
+  <li>1인 경우: SST = SSR + (SSE = 0); model의 직선이 실제 Y값들을 지나감 (확정적인 관계)
+현재 가지고 있는 x변수로 y를 100% 설명, 모든 y가 linear regression line위에 있다</li>
+</ul>
+
+<p><img src="../jupyterimages/algorithms_images//linear_regression/fourth_linear_regression2.png" alt="png" /></p>
+
+<ul>
+  <li>0인 경우: SST = (SSR = 0) + SSE; model의 직선이 Y값의 평균을 지나감 (parameter x가 아무런 y에 효과가 없음)
+현재 가지고 있는 x변수는 y를 설명(예측)에 전혀 도움이 되지않는다</li>
+</ul>
+
+<ol>
+  <li>사용하고 있는 x변수가 y변수의 variance를 얼마나 줄였는지 정도</li>
+  <li>단순히 y의 평균값을 사용했을 때 대비 x정보를 사용함으로써 얻는 성능 향상 정도</li>
+</ol>
+
+<h3 id="수정-결정계수-adjusted-r2">수정 결정계수 (Adjusted R^2)</h3>
+
+<p><img src="../jupyterimages/algorithms_images//linear_regression/fourth_linear_regression4.png" alt="png" /></p>
+
+<ul>
+  <li>R^2는 의미없는 변수 x가 추가되어도 항상 증가한다</li>
+  <li>수정 R^2는 의미없는 변수 x가 추가되었을때 R^2가 증가하는것을 방지하기위해 특정 계수를 식앞에 곱해줌</li>
+  <li>의미있는 변수 x가 추가되었을때는 SSE값이 떨어지기 때문에 전체 adj R^2는 증가하게 된다</li>
+</ul>
+
+<h3 id="예제">예제</h3>
+
+<p><img src="../jupyterimages/algorithms_images//linear_regression/fourth_linear_regression5.png" alt="png" /></p>
+
+<ul>
+  <li>parameter x1 (판매원 수)와 x2 (광고비) 에 의해 y (매출액)의 variance가 68.3% 감소</li>
+  <li>매출액의 평균 (y bar)에 대비 x1, x2 parameter를 이용하면 설명력이 68.3% 증가</li>
+  <li>현재 분석에 사용하고 있는 판매원 수와 광고비는 “변수 품질”정도가 68.3 (100점 기준)</li>
+</ul>
+
+<h1 id="분산-분석-analysis-of-variance">분산 분석 (analysis of variance)</h1>
+
+<h3 id="ssr--sse-x-변수에-의해-설명된-것--에러에-의한-설명된-것">SSR / SSE (x 변수에 의해 설명된 것 / 에러에 의한 설명된 것)</h3>
+
+<ul>
+  <li>SSR / SSE &gt; 1
     <ol>
-      <li>point estimator (점 추정)</li>
-      <li>interval estimator (구간 추정)</li>
+      <li>SSR &gt; SSE; x변수가 y변수에 statistically significant</li>
+      <li>x변수의 기울기가 0이 아님 -&gt; reject null hypothesis</li>
+    </ol>
+  </li>
+  <li>0 &lt;= SSR / SSE &lt;= 1
+    <ol>
+      <li>SSR &lt; SSE; x변수가 y변수에 not statistically significant</li>
+      <li>x변수의 기울기가 0 -&gt; null hypothesis is true</li>
     </ol>
   </li>
 </ul>
-
-<h3 id="point-estimator">point estimator</h3>
-
-<h4 id="yi--w0--w1-xi--εi-εi--n0-σ-i--1-2--n">Yi = w0 + w1 Xi + εi, εi ~ N(0, σ²), i = 1, 2, … n</h4>
-
-<ul>
-  <li>w0 에 대한 point estimator: ^w0 = mean(y) - ^w1 * mean(x)</li>
-  <li>w1 에 대한 point estimator: linear regression 2 참조</li>
-  <li>σ²에 대한 point estimator: ^σ²= (1 / n - 2) sum ( ei²) -&gt; residual</li>
-</ul>
-
-<h3 id="interval-estimation">Interval Estimation</h3>
-
-<ul>
-  <li>구간으로 측정하여 보다 유연한 정보 제공</li>
-  <li>θ (parameter)에 대한 구간 측정 -&gt; ^θ - 상수값 * std(θ) &lt;= θ &lt;= ^θ + 상수값 * std(θ)</li>
-</ul>
-
-<h3 id="기울기에-대한-가설검정">기울기에 대한 가설검정</h3>
-<ul>
-  <li>unknown parameter에 대한 가설을 세우고 이를 검정</li>
-</ul>
-
-<h4 id="p-value">p-value</h4>
-<ul>
-  <li>p-value가 0.05나 0.01보다 작으면 reject null hypothesis</li>
-</ul>
-
-<h3 id="statsmodelsformulaapi에-ols-function을-통한-모델링을-했을때">statsmodels.formula.api에 ols function을 통한 모델링을 했을때</h3>
-
-<p><img src="../jupyterimages/algorithms_images//linear_regression/thrid_linear_regression1.png" alt="png" /></p>
-
-<ul>
-  <li>parameters: wet, frs, cld, intercept</li>
-  <li>point estimates: 각각의 coef</li>
-  <li>std: 각각의 std err</li>
-</ul>
-
-<p><img src="../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression4.png" alt="png" />
-<img src="../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression3.png" alt="png" /></p>
-
-<ul>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>t: 전반적으로 모든 parameter들의</td>
-          <td>t</td>
-          <td>값들이 큼 -&gt; null hypothesis를 reject</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-</ul>
-
-<p><img src="../jupyterimages/algorithms_images/linear_regression/thrid_linear_regression2.png" alt="png" /></p>
-
-<ul>
-  <li>p-value: 모든 slope parameters이 0.05보다 큰 값이 없기 때문에 statistically significant</li>
-</ul>
-
 
                 </div>
             </section>
@@ -346,9 +347,9 @@ into the {body} of the default.hbs template -->
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            this.page.url = 'https://gihokim-datascientist.github.io/algorithms-linear-regression-3';
-                            this.page.identifier = '/algorithms-linear-regression-3';
-                            this.page.title = 'Machine Learning Algorithm - linear regression (3)';
+                            this.page.url = 'https://gihokim-datascientist.github.io/algorithm-linear-regression-4';
+                            this.page.identifier = '/algorithm-linear-regression-4';
+                            this.page.title = 'Machine Learning Algorithm - linear regression (4)';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -405,6 +406,15 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
+                                            <li><a href="/algorithm-linear-regression-3">Machine Learning Algorithm - linear regression (3)</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
                                             <li><a href="/algorithm-linear-regression-2">Machine Learning Algorithm - linear regression (2)</a></li>
                                         
                                     
@@ -423,8 +433,6 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algorithms-basic">Machine Learning Algorithm - 기초 Basic</a></li>
-                                        
                                     
                                   
                                 
@@ -433,7 +441,7 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="/tag/algorithms/">
                                 
-                                    See all 3 posts  →
+                                    See all 4 posts  →
                                 
                             </a>
                         </footer>
@@ -505,12 +513,12 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/algorithm-linear-regression-2">
+            <a class="post-card-image-link" href="/algorithm-linear-regression-3">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/algorithm.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/algorithm-linear-regression-2">
+            <a class="post-card-content-link" href="/algorithm-linear-regression-3">
                 <header class="post-card-header">
                     
                         
@@ -520,11 +528,11 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">Machine Learning Algorithm - linear regression (2)</h2>
+                    <h2 class="post-card-title">Machine Learning Algorithm - linear regression (3)</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (3) - Machine learning linear regression (3)</p>
+                        <p>Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3)</p>
                     
                 </section>
             </a>
@@ -564,18 +572,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Machine Learning Algorithm - linear regression (3)</div>
+    <div class="floating-header-title">Machine Learning Algorithm - linear regression (4)</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Machine+Learning+Algorithm+-+linear+regression+%283%29&amp;url=https://gihokim-datascientist.github.ioalgorithms-linear-regression-3"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Machine+Learning+Algorithm+-+linear+regression+%284%29&amp;url=https://gihokim-datascientist.github.ioalgorithm-linear-regression-4"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://gihokim-datascientist.github.ioalgorithms-linear-regression-3"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://gihokim-datascientist.github.ioalgorithm-linear-regression-4"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

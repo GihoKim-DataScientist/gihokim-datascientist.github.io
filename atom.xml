@@ -64,20 +64,41 @@
     
       
       <item>
-        <title>Machine Learning Algorithm - linear regression (1)</title>
+        <title>Machine Learning Algorithm - linear regression (2)</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression_1&quot;&gt;Algorithms (1) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
         <pubDate>Tue, 13 Apr 2021 09:40:00 -0700</pubDate>
         <link>
-        https://gihokim-datascientist.github.io/algorithm-linear-regression_1</link>
-        <guid isPermaLink="true">https://gihokim-datascientist.github.io/algorithm-linear-regression_1</guid>
+        https://gihokim-datascientist.github.io/algorithm-linear-regression-2</link>
+        <guid isPermaLink="true">https://gihokim-datascientist.github.io/algorithm-linear-regression-2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Machine Learning Algorithm - linear regression (1)</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Tue, 13 Apr 2021 09:40:00 -0700</pubDate>
+        <link>
+        https://gihokim-datascientist.github.io/algorithm-linear-regression-1</link>
+        <guid isPermaLink="true">https://gihokim-datascientist.github.io/algorithm-linear-regression-1</guid>
       </item>
       
     
@@ -88,7 +109,8 @@
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression_1&quot;&gt;Algorithms (1) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>

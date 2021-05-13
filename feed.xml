@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://gihokim-datascientist.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" /><updated>2021-05-12T19:32:20-07:00</updated><id>https://gihokim-datascientist.github.io/feed.xml</id><title type="html">Giho’s Data Science Notes</title><subtitle>주니어 데이터 사이언티스트의 공부 노트</subtitle><entry><title type="html">Coding Questions (1) - 카카오톡 여름 인턴 문제 1번</title><link href="https://gihokim-datascientist.github.io/example" rel="alternate" type="text/html" title="Coding Questions (1) - 카카오톡 여름 인턴 문제 1번" /><published>2021-05-12T09:40:00-07:00</published><updated>2021-05-12T09:40:00-07:00</updated><id>https://gihokim-datascientist.github.io/example</id><content type="html" xml:base="https://gihokim-datascientist.github.io/example">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Coding Questions 구성 &lt;/span&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://gihokim-datascientist.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" /><updated>2021-05-12T20:08:08-07:00</updated><id>https://gihokim-datascientist.github.io/feed.xml</id><title type="html">Giho’s Data Science Notes</title><subtitle>주니어 데이터 사이언티스트의 공부 노트</subtitle><entry><title type="html">Coding Questions (1) - 카카오톡 여름 인턴 문제 1번</title><link href="https://gihokim-datascientist.github.io/example" rel="alternate" type="text/html" title="Coding Questions (1) - 카카오톡 여름 인턴 문제 1번" /><published>2021-05-12T09:40:00-07:00</published><updated>2021-05-12T09:40:00-07:00</updated><id>https://gihokim-datascientist.github.io/example</id><content type="html" xml:base="https://gihokim-datascientist.github.io/example">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Coding Questions 구성 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./example&quot;&gt;Coding Questiosn (1) - 카카오톡 2021 여름 인턴 코딩 문제 1번&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -2444,10 +2444,11 @@ dtype: float64
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;4i&quot;&gt;4.i&lt;/h1&gt;
-&lt;p&gt;The fraction of the varianc of y that is captured by the model is 0.943 as I can see on the model summary&lt;/p&gt;</content><author><name>GihoKim</name></author><category term="modeling" /><summary type="html">Modeling 구성 Machine Learning 실습예제 (1) - linear regression Machine Learning 실습예제 (2) - K-means clustering</summary></entry><entry><title type="html">Machine Learning Algorithm - linear regression (1)</title><link href="https://gihokim-datascientist.github.io/algorithm-linear-regression_1" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (1)" /><published>2021-04-13T09:40:00-07:00</published><updated>2021-04-13T09:40:00-07:00</updated><id>https://gihokim-datascientist.github.io/algorithm-linear-regression_1</id><content type="html" xml:base="https://gihokim-datascientist.github.io/algorithm-linear-regression_1">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The fraction of the varianc of y that is captured by the model is 0.943 as I can see on the model summary&lt;/p&gt;</content><author><name>GihoKim</name></author><category term="modeling" /><summary type="html">Modeling 구성 Machine Learning 실습예제 (1) - linear regression Machine Learning 실습예제 (2) - K-means clustering</summary></entry><entry><title type="html">Machine Learning Algorithm - linear regression (1)</title><link href="https://gihokim-datascientist.github.io/algorithm-linear-regression-1" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (1)" /><published>2021-04-13T09:40:00-07:00</published><updated>2021-04-13T09:40:00-07:00</updated><id>https://gihokim-datascientist.github.io/algorithm-linear-regression-1</id><content type="html" xml:base="https://gihokim-datascientist.github.io/algorithm-linear-regression-1">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression_1&quot;&gt;Algorithms (1) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;linear-regression-선형-회귀&quot;&gt;Linear regression (선형 회귀)&lt;/h1&gt;
@@ -2501,10 +2502,54 @@ dtype: float64
 &lt;p&gt;선형회귀는 가장 알맞은 함수 (line)을 찾는 것
 (Find the best fit line)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression_(3).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;</content><author><name>GihoKim</name></author><category term="algorithms" /><summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (1) - Machine learning linear regression (1)</summary></entry><entry><title type="html">Machine Learning Algorithm - 기초 Basic</title><link href="https://gihokim-datascientist.github.io/algorithms-basic" rel="alternate" type="text/html" title="Machine Learning Algorithm - 기초 Basic" /><published>2021-04-12T09:40:00-07:00</published><updated>2021-04-12T09:40:00-07:00</updated><id>https://gihokim-datascientist.github.io/algorithms-basic</id><content type="html" xml:base="https://gihokim-datascientist.github.io/algorithms-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression_(3).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;</content><author><name>GihoKim</name></author><category term="algorithms" /><summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2)</summary></entry><entry><title type="html">Machine Learning Algorithm - linear regression (2)</title><link href="https://gihokim-datascientist.github.io/algorithm-linear-regression-2" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (2)" /><published>2021-04-13T09:40:00-07:00</published><updated>2021-04-13T09:40:00-07:00</updated><id>https://gihokim-datascientist.github.io/algorithm-linear-regression-2</id><content type="html" xml:base="https://gihokim-datascientist.github.io/algorithm-linear-regression-2">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression_1&quot;&gt;Algorithms (1) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;parameter-estimate-algorithms&quot;&gt;Parameter Estimate Algorithms&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;mean squared error&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/second_linear_regression1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;function H(x)를 w0 + w1 X1으로 두었기 때문에&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/second_linear_regression2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이런식으로 바뀌게 되는것을 알 수 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;to-find-best-fit-line&quot;&gt;To find best fit line&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;cost function을 MSE로 썻기 때문에 parabola 형태를 뛴 그래프 형태가 될 것이다&lt;/li&gt;
+  &lt;li&gt;gradient descent를 적용 w0과 w1에 대한 partial derivative를 각각 구한다&lt;/li&gt;
+  &lt;li&gt;partial derivative = 0 꼴로 만들고 w0과 w1으로 풀어쓰게 되면 w0과 w1에 대한 식이 생겨남&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/second_linear_regression3.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;^Y = ^w0 + ^w1 X 꼴의 식이 성립된다&lt;/p&gt;
+
+&lt;h1 id=&quot;least-squared-estimation-algorithm-최소제곱법&quot;&gt;Least squared Estimation Algorithm (최소제곱법)&lt;/h1&gt;
+
+&lt;h3 id=&quot;residual-잔차&quot;&gt;Residual (잔차)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;e = y - ^y 최소 제곱법으로 구해진 직선의 ^Y와 실제 Y값의 차이 (정해진 값)&lt;/li&gt;
+  &lt;li&gt;ε = y - E(y) 오차항은 확률 분포를 따름&lt;/li&gt;
+  &lt;li&gt;잔차 e는 확률 오차 ε이 실제로 구현된 값&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/second_linear_regression4.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;</content><author><name>GihoKim</name></author><category term="algorithms" /><summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2)</summary></entry><entry><title type="html">Machine Learning Algorithm - 기초 Basic</title><link href="https://gihokim-datascientist.github.io/algorithms-basic" rel="alternate" type="text/html" title="Machine Learning Algorithm - 기초 Basic" /><published>2021-04-12T09:40:00-07:00</published><updated>2021-04-12T09:40:00-07:00</updated><id>https://gihokim-datascientist.github.io/algorithms-basic</id><content type="html" xml:base="https://gihokim-datascientist.github.io/algorithms-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;모델링이란&quot;&gt;모델링이란?&lt;/h1&gt;
@@ -2626,4 +2671,4 @@ dtype: float64
 &lt;ul&gt;
   &lt;li&gt;how? : throughout given data&lt;/li&gt;
   &lt;li&gt;for what? : to make my prediction to be same as my actual data as much as possible&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>GihoKim</name></author><category term="algorithms" /><summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (1) - Machine learning linear regression (1)</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>GihoKim</name></author><category term="algorithms" /><summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2)</summary></entry></feed>

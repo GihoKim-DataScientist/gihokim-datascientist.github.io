@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://gihokim-datascientist.github.io/tag/algorithms/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-13T10:00:12-07:00</updated>
+  <updated>2021-05-13T10:32:32-07:00</updated>
   <id>https://gihokim-datascientist.github.io/tag/algorithms/feed.xml</id>
 
   
@@ -59,22 +59,22 @@
 &lt;h3 id=&quot;r2&quot;&gt;R^2&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;SSE = 실제 Y값과 모델의 ^Y 값들의 차이의 제곱 합&lt;/li&gt;
-  &lt;li&gt;SSR = 모델의 ^Y값과 실제 Y의 평균값과의 차이의 제곱 합&lt;/li&gt;
-  &lt;li&gt;SST = SSR + SSE&lt;/li&gt;
+  &lt;li&gt;ESS = 실제 Y값과 모델의 ^Y 값들의 차이의 제곱 합&lt;/li&gt;
+  &lt;li&gt;RSS = 모델의 ^Y값과 실제 Y의 평균값과의 차이의 제곱 합&lt;/li&gt;
+  &lt;li&gt;TSS = RSS + ESS&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;ssr--sst--r2&quot;&gt;SSR / SST = R^2&lt;/h3&gt;
+&lt;h3 id=&quot;rss--tss--r2&quot;&gt;RSS / TSS = R^2&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;1인 경우: SST = SSR + (SSE = 0); model의 직선이 실제 Y값들을 지나감 (확정적인 관계)
+  &lt;li&gt;1인 경우: TSS = RSS + (ESS = 0); model의 직선이 실제 Y값들을 지나감 (확정적인 관계)
 현재 가지고 있는 x변수로 y를 100% 설명, 모든 y가 linear regression line위에 있다&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//linear_regression/fourth_linear_regression2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;0인 경우: SST = (SSR = 0) + SSE; model의 직선이 Y값의 평균을 지나감 (parameter x가 아무런 y에 효과가 없음)
+  &lt;li&gt;0인 경우: TSS = (RSS = 0) + ESS; model의 직선이 Y값의 평균을 지나감 (parameter x가 아무런 y에 효과가 없음)
 현재 가지고 있는 x변수는 y를 설명(예측)에 전혀 도움이 되지않는다&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -105,18 +105,18 @@
 
 &lt;h1 id=&quot;분산-분석-analysis-of-variance&quot;&gt;분산 분석 (analysis of variance)&lt;/h1&gt;
 
-&lt;h3 id=&quot;ssr--sse-x-변수에-의해-설명된-것--에러에-의한-설명된-것&quot;&gt;SSR / SSE (x 변수에 의해 설명된 것 / 에러에 의한 설명된 것)&lt;/h3&gt;
+&lt;h3 id=&quot;rss--ess-x-변수에-의해-설명된-것--에러에-의한-설명된-것&quot;&gt;RSS / ESS (x 변수에 의해 설명된 것 / 에러에 의한 설명된 것)&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;SSR / SSE &amp;gt; 1
+  &lt;li&gt;RSS / ESS &amp;gt; 1
     &lt;ol&gt;
-      &lt;li&gt;SSR &amp;gt; SSE; x변수가 y변수에 statistically significant&lt;/li&gt;
+      &lt;li&gt;RSS &amp;gt; ESS; x변수가 y변수에 statistically significant&lt;/li&gt;
       &lt;li&gt;x변수의 기울기가 0이 아님 -&amp;gt; reject null hypothesis&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-  &lt;li&gt;0 &amp;lt;= SSR / SSE &amp;lt;= 1
+  &lt;li&gt;0 &amp;lt;= RSS / ESS &amp;lt;= 1
     &lt;ol&gt;
-      &lt;li&gt;SSR &amp;lt; SSE; x변수가 y변수에 not statistically significant&lt;/li&gt;
+      &lt;li&gt;RSS &amp;lt; ESS; x변수가 y변수에 not statistically significant&lt;/li&gt;
       &lt;li&gt;x변수의 기울기가 0 -&amp;gt; null hypothesis is true&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;

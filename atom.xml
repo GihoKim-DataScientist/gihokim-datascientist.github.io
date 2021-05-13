@@ -26,24 +26,6 @@
     
       
       <item>
-        <title>Machine Learning Algorithm - 기초 Basic</title>
-        
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning 기초&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        
-        <pubDate>Wed, 12 May 2021 09:40:00 -0700</pubDate>
-        <link>
-        https://gihokim-datascientist.github.io/algorithms-basic</link>
-        <guid isPermaLink="true">https://gihokim-datascientist.github.io/algorithms-basic</guid>
-      </item>
-      
-    
-      
-      <item>
         <title>Machine Learning 실습예제 - k-means clustering</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Modeling 구성 &lt;/span&gt;&lt;/p&gt;
@@ -77,6 +59,44 @@
         <link>
         https://gihokim-datascientist.github.io/linear-regression-modeling</link>
         <guid isPermaLink="true">https://gihokim-datascientist.github.io/linear-regression-modeling</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Machine Learning Algorithm - linear regression (1)</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression_1&quot;&gt;Algorithms (1) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Tue, 13 Apr 2021 09:40:00 -0700</pubDate>
+        <link>
+        https://gihokim-datascientist.github.io/algorithm-linear-regression_1</link>
+        <guid isPermaLink="true">https://gihokim-datascientist.github.io/algorithm-linear-regression_1</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Machine Learning Algorithm - 기초 Basic</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression_1&quot;&gt;Algorithms (1) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Mon, 12 Apr 2021 09:40:00 -0700</pubDate>
+        <link>
+        https://gihokim-datascientist.github.io/algorithms-basic</link>
+        <guid isPermaLink="true">https://gihokim-datascientist.github.io/algorithms-basic</guid>
       </item>
       
     

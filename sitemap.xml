@@ -20,22 +20,6 @@
     </url>
     
     <url>
-        <loc>https://gihokim-datascientist.github.io/algorithms-basic.html</loc>
-        
-        <lastmod>2021-05-12T09:40:00-07:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
         <loc>https://gihokim-datascientist.github.io/k-means-clustering-code.html</loc>
         
         <lastmod>2021-05-11T09:40:00-07:00</lastmod>
@@ -55,6 +39,38 @@
         <loc>https://gihokim-datascientist.github.io/linear-regression-modeling.html</loc>
         
         <lastmod>2021-05-01T09:40:00-07:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://gihokim-datascientist.github.io/algorithm-linear-regression_1.html</loc>
+        
+        <lastmod>2021-04-13T09:40:00-07:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://gihokim-datascientist.github.io/algorithms-basic.html</loc>
+        
+        <lastmod>2021-04-12T09:40:00-07:00</lastmod>
         
 
         

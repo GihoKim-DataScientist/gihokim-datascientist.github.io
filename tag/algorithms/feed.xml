@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://gihokim-datascientist.github.io/tag/algorithms/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-12T19:01:20-07:00</updated>
+  <updated>2021-05-12T19:32:20-07:00</updated>
   <id>https://gihokim-datascientist.github.io/tag/algorithms/feed.xml</id>
 
   
@@ -32,14 +32,106 @@
 
   
     <entry>
+      <title type="html">Machine Learning Algorithm - linear regression (1)</title>
+      <link href="https://gihokim-datascientist.github.io/algorithm-linear-regression_1" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (1)" />
+      <published>2021-04-13T09:40:00-07:00</published>
+      <updated>2021-04-13T09:40:00-07:00</updated>
+      <id>https://gihokim-datascientist.github.io/algorithm-linear-regression_1</id>
+      <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithm-linear-regression_1">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression_1&quot;&gt;Algorithms (1) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;linear-regression-선형-회귀&quot;&gt;Linear regression (선형 회귀)&lt;/h1&gt;
+
+&lt;h3 id=&quot;변수-사이의-관계&quot;&gt;변수 사이의 관계&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;확정적 관계&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;x 변수만으로 y를 100% 표현 (오차 없음)&lt;/p&gt;
+
+&lt;p&gt;ex) force = f(mass, acceleration), distance = f(velocity, time)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;확률적 관계&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ex) 포도주 가격 = f(강우량, 온도, 포도품종) + ε&lt;/p&gt;
+
+&lt;h1 id=&quot;francis-galton&quot;&gt;Francis Galton&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression_(1).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;relationship of height between father and son&lt;/p&gt;
+
+&lt;h1 id=&quot;선형-회귀-모델-linear-regression&quot;&gt;선형 회귀 모델 (linear regression)&lt;/h1&gt;
+
+&lt;h3 id=&quot;선형회귀-모델-출력변수-y를-입력변수-x들의-선형-결합으로-표현한-모델&quot;&gt;선형회귀 모델: 출력변수 Y를 입력변수 x들의 선형 결합으로 표현한 모델&lt;/h3&gt;
+
+&lt;h4 id=&quot;선형결합-변수들을-상수-배와-더하기-빼기를-통해-결합&quot;&gt;선형결합: 변수들을 (상수 배와) 더하기 빼기를 통해 결합&lt;/h4&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      Y = B + B1 X1 + B2 X2 + ... Bp Xp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;x 변수가 한개 인 경우: Y = B0 + B1 X (직선식)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;B0 = intercept (절편), B1 = slope (기울기)&lt;/p&gt;
+
+&lt;h3 id=&quot;purpose-of-linear-regression&quot;&gt;purpose of linear regression&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;to interpret the relationship between x and y&lt;/li&gt;
+  &lt;li&gt;to predict the output value y&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;regression-model-types&quot;&gt;Regression model types&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression_(2).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;선형회귀는 가장 알맞은 함수 (line)을 찾는 것
+(Find the best fit line)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression_(3).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>GihoKim</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithms" />
+      
+
+      
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (1) - Machine learning linear regression (1)</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Machine Learning Algorithm - 기초 Basic</title>
       <link href="https://gihokim-datascientist.github.io/algorithms-basic" rel="alternate" type="text/html" title="Machine Learning Algorithm - 기초 Basic" />
-      <published>2021-05-12T09:40:00-07:00</published>
-      <updated>2021-05-12T09:40:00-07:00</updated>
+      <published>2021-04-12T09:40:00-07:00</published>
+      <updated>2021-04-12T09:40:00-07:00</updated>
       <id>https://gihokim-datascientist.github.io/algorithms-basic</id>
       <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithms-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression_1&quot;&gt;Algorithms (1) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;모델링이란&quot;&gt;모델링이란?&lt;/h1&gt;
@@ -182,7 +274,7 @@
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning 기초</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (1) - Machine learning linear regression (1)</summary>
       
 
       

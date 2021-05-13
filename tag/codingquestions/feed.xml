@@ -1,0 +1,1780 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://gihokim-datascientist.github.io/tag/codingquestions/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-05-12T19:01:20-07:00</updated>
+  <id>https://gihokim-datascientist.github.io/tag/codingquestions/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Giho’s Data Science Notes | </title>
+  
+
+  
+    <subtitle>주니어 데이터 사이언티스트의 공부 노트</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Coding Questions (1) - 카카오톡 여름 인턴 문제 1번</title>
+      <link href="https://gihokim-datascientist.github.io/example" rel="alternate" type="text/html" title="Coding Questions (1) - 카카오톡 여름 인턴 문제 1번" />
+      <published>2021-05-12T09:40:00-07:00</published>
+      <updated>2021-05-12T09:40:00-07:00</updated>
+      <id>https://gihokim-datascientist.github.io/example</id>
+      <content type="html" xml:base="https://gihokim-datascientist.github.io/example">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Coding Questions 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./example&quot;&gt;Coding Questiosn (1) - 카카오톡 2021 여름 인턴 코딩 문제 1번&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'desktop/codeit/iphone.csv'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index_col&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'iPhone 8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'메모리'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#iphone_df.loc[row, column]
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'2GB'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# iphone_df.loc['iPhone 8', '가격'] 가격이라는 column이 존재하지않음
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'iPhone X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#모든 columns
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;출시일        2017-11-03
+디스플레이             5.8
+메모리               3GB
+출시 버전        iOS 11.1
+Face ID           Yes
+Name: iPhone X, dtype: object
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'iPhone X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pandas.core.series.Series
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'출시일'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;iPhone 7         2016-09-16
+iPhone 7 Plus    2016-09-16
+iPhone 8         2017-09-22
+iPhone 8 Plus    2017-09-22
+iPhone X         2017-11-03
+iPhone XS        2018-09-21
+iPhone XS Max    2018-09-21
+Name: 출시일, dtype: object
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'디스플레이'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#column부를때는 .loc따로 필요없음
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;iPhone 7         4.7
+iPhone 7 Plus    5.5
+iPhone 8         4.7
+iPhone 8 Plus    5.5
+iPhone X         5.8
+iPhone XS        5.8
+iPhone XS Max    6.5
+Name: 디스플레이, dtype: float64
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#row 불러오기
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'iPhone X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#return pandas series
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;출시일        2017-11-03
+디스플레이             5.8
+메모리               3GB
+출시 버전        iOS 11.1
+Face ID           Yes
+Name: iPhone X, dtype: object
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'iPhone X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'iPhone 8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'iPhone X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'iPhone 8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt; 
+&lt;span class=&quot;c1&quot;&gt;#return pandas dataFrame
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pandas.core.frame.DataFrame
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#columns 불러오기
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Face ID'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'출시일'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'메모리'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#슬라이싱
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'iPhone 8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'iPhone XS'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#tricky
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'메모리'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Face ID'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#column slicing
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;메모리&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Face ID&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#with boolean for row
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#with boolean for column
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'디스플레이'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;iPhone 7         False
+iPhone 7 Plus     True
+iPhone 8         False
+iPhone 8 Plus     True
+iPhone X          True
+iPhone XS         True
+iPhone XS Max     True
+Name: 디스플레이, dtype: bool
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'디스플레이'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Face ID'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Yes'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;iPhone 7         False
+iPhone 7 Plus    False
+iPhone 8         False
+iPhone 8 Plus    False
+iPhone X          True
+iPhone XS         True
+iPhone XS Max     True
+Name: Face ID, dtype: bool
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Face ID'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Yes'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Face ID'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Yes'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'디스플레이'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#2가지 묶을때는 괄호 쓰기
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#DataFrame 위치로 인덱싱하기
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#iloc[row, column]
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'No'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'iPhone 7'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#return list of row
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'iPhone 7'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'iPhone 7 Plus'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#return dataFrame of rows
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#same func row slicing
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'iPhone 7'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'iPhone X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'iPhone 7'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'iPhone X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#same func to get column
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'출시일'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'출시일'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#same func to get specific columns
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'출시일'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'디스플레이'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'출시일'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'디스플레이'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#column slicing
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;출시일&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;출시 버전&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#one row location
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#multiple row locations
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#row slicing
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#one column location
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#multiple column locations
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#column slicing
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+      &lt;th&gt;확인용&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;80&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1.0&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;81&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;82&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'디스플레이'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;iPhone 7          True
+iPhone 7 Plus    False
+iPhone 8          True
+iPhone 8 Plus    False
+iPhone X         False
+iPhone XS        False
+iPhone XS Max    False
+Name: 디스플레이, dtype: bool
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;출시일&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;메모리&lt;/th&gt;
+      &lt;th&gt;출시 버전&lt;/th&gt;
+      &lt;th&gt;Face ID&lt;/th&gt;
+      &lt;th&gt;확인용&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;2016-09-16&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 10.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;80&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+      &lt;td&gt;2GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;81&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;2017-09-22&lt;/td&gt;
+      &lt;td&gt;5.5&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.0&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;82&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;2017-11-03&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;3GB&lt;/td&gt;
+      &lt;td&gt;iOS 11.1&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;5.8&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;2018-09-21&lt;/td&gt;
+      &lt;td&gt;6.5&lt;/td&gt;
+      &lt;td&gt;4GB&lt;/td&gt;
+      &lt;td&gt;iOS 12.0&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'디스플레이'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'확인용'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;확인용&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;iphone_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'디스플레이'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'확인용'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;디스플레이&lt;/th&gt;
+      &lt;th&gt;확인용&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7&lt;/th&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 7 Plus&lt;/th&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8&lt;/th&gt;
+      &lt;td&gt;False&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone 8 Plus&lt;/th&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone X&lt;/th&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS&lt;/th&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;iPhone XS Max&lt;/th&gt;
+      &lt;td&gt;True&lt;/td&gt;
+      &lt;td&gt;True&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>GihoKim</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingquestions" />
+      
+
+      
+        <summary type="html">Coding Questions 구성 Coding Questiosn (1) - 카카오톡 2021 여름 인턴 코딩 문제 1번</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

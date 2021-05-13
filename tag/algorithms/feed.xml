@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://gihokim-datascientist.github.io/tag/algorithms/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-05-12T19:01:20-07:00</updated>
+  <id>https://gihokim-datascientist.github.io/tag/algorithms/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Giho’s Data Science Notes | </title>
+  
+
+  
+    <subtitle>주니어 데이터 사이언티스트의 공부 노트</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Machine Learning Algorithm - 기초 Basic</title>
+      <link href="https://gihokim-datascientist.github.io/algorithms-basic" rel="alternate" type="text/html" title="Machine Learning Algorithm - 기초 Basic" />
+      <published>2021-05-12T09:40:00-07:00</published>
+      <updated>2021-05-12T09:40:00-07:00</updated>
+      <id>https://gihokim-datascientist.github.io/algorithms-basic</id>
+      <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithms-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning 기초&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;모델링이란&quot;&gt;모델링이란?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;주어진 독립변수, 예측변수, input 변수 (predictor variables) x&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;주어진 종속변수 반응변수 output 변수 (response variables) y 를 가지고&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;알맞은 함수식 (hypothesis function or prediction rule) function f(x) 를 찾는것&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;training-data-and-testing-data&quot;&gt;Training data and Testing data&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Training data (학습 데이터)는 모델 f(x)구축시 사용되는 데이터&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Testing data (검증 데이터)는 구축된 모델을 검증하는데 사용되는 데이터&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ai란&quot;&gt;AI란?&lt;/h2&gt;
+&lt;p&gt;Artifical intelligence는 어느 기계에 함수가 들어가는 것 (세탁기에 함수가 들어가면 인공지능 세탁기가 된다!)&lt;/p&gt;
+
+&lt;h1 id=&quot;모델링의-종류&quot;&gt;모델링의 종류&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;linear regression (선형 회귀)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;logistic regression (로지스틱 회귀)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;decision tree (의사결정나무)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;random forest (랜덤 포레스트)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;network (네트워크 모델 #신경망모델)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;데이터&quot;&gt;데이터&lt;/h1&gt;
+&lt;h3 id=&quot;y의-종류&quot;&gt;y의 종류&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;연송형 (quantitative) : 숫자로 표현 (가격, 길이, 압력, 두께)&lt;/li&gt;
+  &lt;li&gt;범주형 (categorical): 숫자로 표현 안되는 데이터 (제품 불량 여부, 보험 사기 여부)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;regression-수치-예측&quot;&gt;regression (수치 예측)&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;큰 의미의 수치 예측&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;classification-범주-예측-분류&quot;&gt;classification (범주 예측, 분류)&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;0 = 불량, 1 = 정상&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;regression-example&quot;&gt;regression example&lt;/h1&gt;
+
+&lt;p&gt;모델을 만들고 x값을 넣었을때 numerical y값을 구하는 모델&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/basic1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;classification-example&quot;&gt;classification example&lt;/h1&gt;
+
+&lt;p&gt;두 종류를 나눠주는 모델을 만들고 데이터가 주어졌을때 그 것이 어느 종류인지 알려주는 모델&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/basic2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h6 id=&quot;features--특성들을-바탕으로-불량품인지-아닌지-또는-정상인지-비정상인지-종류를-예측-하는-모델&quot;&gt;features  (특성들)을 바탕으로 불량품인지 아닌지 또는 정상인지 비정상인지 ‘종류’를 예측 하는 모델&lt;/h6&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;x 와 y 의 관계를 찾자&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;y를 설명하는 x 변수는 보통 여러개 이다&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;여러 종류의 x를 가지고 y와의 관계를 찾는 것&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Y = f(X1, X2, … Xp)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;parameters-매개-변수&quot;&gt;Parameters (매개 변수)&lt;/h1&gt;
+&lt;h3 id=&quot;coefficient--parameters-include-intercept&quot;&gt;coefficient = parameters (include intercept)&lt;/h3&gt;
+
+&lt;p&gt;Y = w1 X1 + w2 X2 + ε&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;여기서는 w1 과 w2가 parameter, ε은 오차 (error)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;모델의 parameter를 찾는 것이 궁극적인 목표&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;loss-function--y---fx-손실함수--오차를-구해주는-식&quot;&gt;Loss function = Y - f(x) (손실함수 = 오차를 구해주는 식)&lt;/h4&gt;
+&lt;p&gt;Best model은 Loss function이 적은 것 Y - f(x) = 0, ε = 0&lt;/p&gt;
+
+&lt;h4 id=&quot;cost-function--sum--yi---w1-x1i--w2-x2i---2&quot;&gt;Cost function = Sum ( Yi - (w1 X1i + w2 X2i ) ) ^2&lt;/h4&gt;
+&lt;p&gt;개별적인 차이를 정의하는 식 // loss function과 비슷한 맥락&lt;/p&gt;
+
+&lt;h3 id=&quot;cost-function을-최소로하는-parameters-w1-w2를-찾자&quot;&gt;Cost function을 최소로하는 parameters (w1, w2)를 찾자&lt;/h3&gt;
+&lt;p&gt;^w1, ^w2 (hat)&lt;/p&gt;
+
+&lt;h1 id=&quot;models-parameter를-찾는-것이-핵심&quot;&gt;Model’s parameter를 찾는 것이 핵심&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;how? : throughout given data&lt;/li&gt;
+  &lt;li&gt;for what? : to make my prediction to be same as my actual data as much as possible&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>GihoKim</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithms" />
+      
+
+      
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning 기초</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

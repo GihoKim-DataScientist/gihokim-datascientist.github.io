@@ -45,6 +45,29 @@
     
       
       <item>
+        <title>Machine Learning Algorithm - logistic regression (1)</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 14 Apr 2021 05:40:00 -0700</pubDate>
+        <link>
+        https://gihokim-datascientist.github.io/algorithm-logistic-regression-1</link>
+        <guid isPermaLink="true">https://gihokim-datascientist.github.io/algorithm-logistic-regression-1</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Machine Learning 실습예제 - linear regression</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Modeling 구성 &lt;/span&gt;&lt;/p&gt;
@@ -73,6 +96,7 @@
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -95,6 +119,7 @@
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -117,6 +142,7 @@
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -139,6 +165,7 @@
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -161,6 +188,7 @@
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>

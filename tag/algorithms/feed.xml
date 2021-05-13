@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://gihokim-datascientist.github.io/tag/algorithms/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-13T10:32:32-07:00</updated>
+  <updated>2021-05-13T11:17:16-07:00</updated>
   <id>https://gihokim-datascientist.github.io/tag/algorithms/feed.xml</id>
 
   
@@ -32,6 +32,139 @@
 
   
     <entry>
+      <title type="html">Machine Learning Algorithm - logistic regression (1)</title>
+      <link href="https://gihokim-datascientist.github.io/algorithm-logistic-regression-1" rel="alternate" type="text/html" title="Machine Learning Algorithm - logistic regression (1)" />
+      <published>2021-04-14T05:40:00-07:00</published>
+      <updated>2021-04-14T05:40:00-07:00</updated>
+      <id>https://gihokim-datascientist.github.io/algorithm-logistic-regression-1</id>
+      <content type="html" xml:base="https://gihokim-datascientist.github.io/algorithm-logistic-regression-1">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithms 구성 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithms-basic&quot;&gt;Algorithms (1) - Machine learning basic 기초&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-1&quot;&gt;Algorithms (2) - Machine learning linear regression (1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;logistic-regression-classification&quot;&gt;Logistic regression (classification)&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;y (output)가 범주형 data 일때 사용 (categorical y)&lt;/li&gt;
+  &lt;li&gt;분류예측을 하는 모델링
+    &lt;ol&gt;
+      &lt;li&gt;제품이 불량인지 분류&lt;/li&gt;
+      &lt;li&gt;코로나가 걸렸는지 안걸렸는지 등&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;parameter들을 가지고 y값을 predict 하여 분류하는 model&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;bernoulli-random-variable&quot;&gt;Bernoulli random variable&lt;/h3&gt;
+
+&lt;h4 id=&quot;yi--b0--b1-xi--ei-yi--0-or-1&quot;&gt;Yi = B0 + B1 Xi + ei; Yi = 0 or 1&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;assume E(ei) = 0 -&amp;gt; Yi = B0 + B1 Xi
+    &lt;ul&gt;
+      &lt;li&gt;P(Yi = 1) = prob_x 라고 가정할때&lt;/li&gt;
+      &lt;li&gt;P(Yi = 0) = 1 - prob_x 로 나타낼수 있다&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;E(Yi) = 1 * prob_x + 0 * (1 - prob_x) = prob_x&lt;/li&gt;
+  &lt;li&gt;E(Yi) = B0 + B1 Xi = prob_x&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;x-값이-주어였을-때-y값이--1을-가질-확률로-표현하는-모델링&quot;&gt;x 값이 주어였을 때 y값이  1을 가질 확률로 표현하는 모델링&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//logistic_regression/first-logistic-regression-1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;이런-data를-linear-regression으로-fitting하기에는-적합하지-않다&quot;&gt;이런 data를 linear regression으로 fitting하기에는 적합하지 않다.&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//logistic_regression/first-logistic-regression-2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;나이별로 그룹을 만들고 질병을 보유하고 있는 확률을 계산&lt;/li&gt;
+  &lt;li&gt;그래프로 표시하면 빨간색 선이 파란색 linear regression보다 더 정확한 line이다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//logistic_regression/first-logistic-regression-3.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이런 관계를 나타낼수 있는 함수가 Logistic 함수 혹은 sigmoid 함수라고 한다.
+&lt;img src=&quot;../jupyterimages/algorithms_images//logistic_regression/first-logistic-regression-4.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;항상 f(x)는 0과 1 사이임&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;parameter x가 범주 1에 속할 확률이 logistic function&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;E(y) = P(X = x) = P(Y = 1 given X = x) = 1 - P(Y = 0 given X = x)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이렇게도 표현이 가능하다&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//logistic_regression/first-logistic-regression-5.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;“logistic” function&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;where z =  B0 + B1X&lt;/p&gt;
+
+&lt;h4 id=&quot;parameter-b0-과-b1이-y값과-linear-relationship이-아니라서-직관적인-해석이-안된다&quot;&gt;parameter B0 과 B1이 y값과 linear relationship이 아니라서 직관적인 해석이 안된다&lt;/h4&gt;
+
+&lt;h5 id=&quot;그래서-odd-개념을-접목시켜야된다&quot;&gt;그래서 odd 개념을 접목시켜야된다&lt;/h5&gt;
+
+&lt;h3 id=&quot;odds-승산&quot;&gt;odds (승산)&lt;/h3&gt;
+
+&lt;p&gt;성공확률을 p라고 정의할때 실패 대비 성공 확률 비율&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;odd = p / (1 -p)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ex) 월드컵에서 프랑스가 이길 odd가 2 / 11이라면 p/(1 - p)가 2/11이므로 p로 풀어내면 p = 2/13인 0.15 (15%)가 된다&lt;/p&gt;
+
+&lt;p&gt;odds의 개념을 logistic에 접목을 시키면 이런식으로 표현이 가능하다&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//logistic_regression/first-logistic-regression-6.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;odd에다가 log를 취하면 단순환 선형 결합의 형태로 바뀐다. (logit transformation)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//logistic_regression/first-logistic-regression-7.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;여기서는 B1에 대한 해석이 직관적으로 바뀜 (x가 증가하면 log(odd)가 증가함; x가 증가함에 따라 성공확률이 log scale로 얼마만큼 증가했다라고 할 수 있다)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//logistic_regression/first-logistic-regression-8.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>GihoKim</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithms" />
+      
+
+      
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4) Algorithms (3) - Machine learning logistic regression (1)</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Machine Learning Algorithm - linear regression (4)</title>
       <link href="https://gihokim-datascientist.github.io/algorithm-linear-regression-4" rel="alternate" type="text/html" title="Machine Learning Algorithm - linear regression (4)" />
       <published>2021-04-13T13:40:00-07:00</published>
@@ -44,6 +177,7 @@
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;결정계수-coefficient-of-determination-r2&quot;&gt;결정계수 (coefficient of determination: R^2)&lt;/h1&gt;
@@ -141,7 +275,7 @@
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4)</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4) Algorithms (3) - Machine learning logistic regression (1)</summary>
       
 
       
@@ -161,6 +295,7 @@
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;parameter-estimation-algorithms&quot;&gt;Parameter Estimation Algorithms&lt;/h1&gt;
@@ -247,7 +382,7 @@
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4)</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4) Algorithms (3) - Machine learning logistic regression (1)</summary>
       
 
       
@@ -267,6 +402,7 @@
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;parameter-estimate-algorithms&quot;&gt;Parameter Estimate Algorithms&lt;/h1&gt;
@@ -326,7 +462,7 @@
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4)</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4) Algorithms (3) - Machine learning logistic regression (1)</summary>
       
 
       
@@ -346,6 +482,7 @@
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;linear-regression-선형-회귀&quot;&gt;Linear regression (선형 회귀)&lt;/h1&gt;
@@ -420,7 +557,7 @@
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4)</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4) Algorithms (3) - Machine learning logistic regression (1)</summary>
       
 
       
@@ -440,6 +577,7 @@
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-2&quot;&gt;Algorithms (2) - Machine learning linear regression (2)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-3&quot;&gt;Algorithms (2) - Machine learning linear regression (3)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algorithm-linear-regression-4&quot;&gt;Algorithms (2) - Machine learning linear regression (4)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm-logistic-regression-1&quot;&gt;Algorithms (3) - Machine learning logistic regression (1)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;모델링이란&quot;&gt;모델링이란?&lt;/h1&gt;
@@ -582,7 +720,7 @@
       
 
       
-        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4)</summary>
+        <summary type="html">Algorithms 구성 Algorithms (1) - Machine learning basic 기초 Algorithms (2) - Machine learning linear regression (1) Algorithms (2) - Machine learning linear regression (2) Algorithms (2) - Machine learning linear regression (3) Algorithms (2) - Machine learning linear regression (4) Algorithms (3) - Machine learning logistic regression (1)</summary>
       
 
       

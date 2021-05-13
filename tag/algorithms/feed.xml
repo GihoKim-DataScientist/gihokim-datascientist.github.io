@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://gihokim-datascientist.github.io/tag/algorithms/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-12T20:08:08-07:00</updated>
+  <updated>2021-05-12T21:13:38-07:00</updated>
   <id>https://gihokim-datascientist.github.io/tag/algorithms/feed.xml</id>
 
   
@@ -16,7 +16,7 @@
   
 
   
-    <subtitle>주니어 데이터 사이언티스트의 공부 노트</subtitle>
+    <subtitle>주니어 데이터 사이언티스트 김기호의 컴퓨터 공부 일기</subtitle>
   
 
   
@@ -92,8 +92,8 @@
 
 &lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression_(2).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;선형회귀는 가장 알맞은 함수 (line)을 찾는 것
-(Find the best fit line)&lt;/p&gt;
+&lt;p&gt;선형회귀는 가장 데이터에 알맞은 함수 (line)를 찾는 것
+(Find the best fit line of different lines)&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images/linear_regression_(3).png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;</content>
 

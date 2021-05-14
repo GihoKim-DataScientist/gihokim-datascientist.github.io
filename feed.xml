@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://gihokim-datascientist.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" /><updated>2021-05-13T11:17:16-07:00</updated><id>https://gihokim-datascientist.github.io/feed.xml</id><title type="html">Giho’s Data Science Notes</title><subtitle>주니어 데이터 사이언티스트 김기호의 컴퓨터 공부 일기</subtitle><entry><title type="html">Coding Questions (1) - 카카오톡 여름 인턴 문제 1번</title><link href="https://gihokim-datascientist.github.io/example" rel="alternate" type="text/html" title="Coding Questions (1) - 카카오톡 여름 인턴 문제 1번" /><published>2021-05-12T09:40:00-07:00</published><updated>2021-05-12T09:40:00-07:00</updated><id>https://gihokim-datascientist.github.io/example</id><content type="html" xml:base="https://gihokim-datascientist.github.io/example">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Coding Questions 구성 &lt;/span&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://gihokim-datascientist.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gihokim-datascientist.github.io/" rel="alternate" type="text/html" /><updated>2021-05-14T04:44:02-07:00</updated><id>https://gihokim-datascientist.github.io/feed.xml</id><title type="html">Giho’s Data Science Notes</title><subtitle>주니어 데이터 사이언티스트 김기호의 컴퓨터 공부 일기</subtitle><entry><title type="html">Coding Questions (1) - 카카오톡 여름 인턴 문제 1번</title><link href="https://gihokim-datascientist.github.io/example" rel="alternate" type="text/html" title="Coding Questions (1) - 카카오톡 여름 인턴 문제 1번" /><published>2021-05-12T09:40:00-07:00</published><updated>2021-05-12T09:40:00-07:00</updated><id>https://gihokim-datascientist.github.io/example</id><content type="html" xml:base="https://gihokim-datascientist.github.io/example">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Coding Questions 구성 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./example&quot;&gt;Coding Questiosn (1) - 카카오톡 2021 여름 인턴 코딩 문제 1번&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -2041,7 +2041,7 @@ The total cost after the first iteration is 8
   &lt;li&gt;E(Yi) = B0 + B1 Xi = prob_x&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4 id=&quot;x-값이-주어였을-때-y값이--1을-가질-확률로-표현하는-모델링&quot;&gt;x 값이 주어였을 때 y값이  1을 가질 확률로 표현하는 모델링&lt;/h4&gt;
+&lt;h4 id=&quot;x-값이-주어졌을-때-y값이--1을-가질-확률로-표현하는-모델링&quot;&gt;x 값이 주어졌을 때 y값이  1을 가질 확률로 표현하는 모델링&lt;/h4&gt;
 
 &lt;p&gt;&lt;img src=&quot;../jupyterimages/algorithms_images//logistic_regression/first-logistic-regression-1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
